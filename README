@@ -1,0 +1,2 @@
+This is a port of the code from http://github.com/esad/zimt. Mostly I made the 
+code more generic by re-namespacing everything under WebSocket.
