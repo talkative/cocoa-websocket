@@ -29,7 +29,8 @@ enum {
 }
 
 -(id)initWithURLString:(NSString *)urlString delegate:(id<WebSocketDelegate>)aDelegate {
-    if (self=[super init]) {
+    self = [super init];
+    if (self) {
         self.delegate = aDelegate;
         url = [[NSURL URLWithString:urlString] retain];
         if (![url.scheme isEqualToString:@"ws"]) {
